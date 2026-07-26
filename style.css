@@ -62,10 +62,12 @@ button { font: inherit; }
 
 .section-shell { width: min(1180px, calc(100% - 44px)); margin: 0 auto; }
 .hero {
-  min-height: 72vh;
-  display: flex;
+  min-height: 82vh;
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 64px;
   align-items: center;
-  padding: 96px 0 80px;
+  padding: 90px 0 70px;
 }
 .eyebrow { margin: 0 0 14px; color: var(--accent); font-size: 0.78rem; font-weight: 800; letter-spacing: 0.16em; }
 h1, h2, h3 { margin-top: 0; line-height: 1.08; }
@@ -89,12 +91,38 @@ h2 { font-size: clamp(2.2rem, 4vw, 4rem); }
 .button-primary { color: white; background: var(--ink); }
 .button-secondary { background: transparent; }
 
-.project-tags span, .tool-list span {
+.hero-panel {
+  position: relative;
+  overflow: hidden;
+  min-height: 520px;
+  padding: clamp(32px, 4vw, 52px);
+  border-radius: 30px;
+  color: white;
+  background: linear-gradient(150deg, var(--navy), #233d72 65%, #3457a5);
+  box-shadow: var(--shadow);
+}
+.panel-copy { position: relative; z-index: 2; max-width: 510px; }
+.hero-panel h2 { position: relative; margin-bottom: 20px; font-size: clamp(2.3rem, 4vw, 4.4rem); line-height: 0.98; }
+.panel-text { max-width: 430px; margin: 0; color: rgba(255,255,255,0.72); font-size: 1rem; }
+.panel-label { position: relative; color: #ffb3ad; font-size: 0.78rem; font-weight: 800; letter-spacing: 0.15em; }
+.hero-orbit {
+  position: absolute;
+  right: -90px;
+  top: -90px;
+  width: 310px;
+  height: 310px;
+  border: 1px solid rgba(255,255,255,0.35);
+  border-radius: 50%;
+  box-shadow: 0 0 0 55px rgba(255,255,255,0.05), 0 0 0 110px rgba(255,255,255,0.03);
+}
+.focus-tags { position: absolute; z-index: 2; left: clamp(32px, 4vw, 52px); right: clamp(32px, 4vw, 52px); bottom: 38px; display: flex; flex-wrap: wrap; gap: 9px; }
+.focus-tags span, .project-tags span, .tool-list span {
   padding: 7px 11px;
   border-radius: 999px;
   font-size: 0.78rem;
   font-weight: 700;
 }
+.focus-tags span { border: 1px solid rgba(255,255,255,0.25); background: rgba(255,255,255,0.08); }
 
 .impact-band {
   display: grid;
@@ -182,7 +210,7 @@ footer { padding: 28px 22px; color: var(--muted); text-align: center; border-top
 }
 
 @media (max-width: 900px) {
-  .about, .project-card-featured { grid-template-columns: 1fr; }
+  .hero, .about, .project-card-featured { grid-template-columns: 1fr; }
   .hero { padding-top: 60px; }
   .impact-band { grid-template-columns: 1fr; }
   .impact-band article { border-right: 0; border-bottom: 1px solid rgba(255,255,255,0.14); }
@@ -208,6 +236,90 @@ footer { padding: 28px 22px; color: var(--muted); text-align: center; border-top
   }
   .site-nav.open { display: flex; }
   h1 { font-size: 3.25rem; }
+  .hero-panel { min-height: 500px; }
   .project-grid, .approach-grid { grid-template-columns: 1fr; }
   .contact { padding: 42px 25px; }
+}
+
+/* Professional portrait in the introduction */
+.hero-copy { min-width: 0; }
+.hero-photo-wrap {
+  position: relative;
+  width: min(100%, 460px);
+  margin: 0;
+  justify-self: end;
+}
+.hero-photo-frame {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 5;
+  border-radius: 32px;
+  background: var(--cream);
+  box-shadow: var(--shadow);
+}
+.hero-photo-frame::before {
+  content: "";
+  position: absolute;
+  inset: 14px;
+  z-index: 2;
+  pointer-events: none;
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 23px;
+}
+.hero-photo-frame::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 36%;
+  pointer-events: none;
+  background: linear-gradient(to top, rgba(12, 23, 48, 0.24), transparent);
+}
+.hero-photo {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 34%;
+}
+.hero-photo-wrap figcaption {
+  position: absolute;
+  right: 22px;
+  bottom: 20px;
+  z-index: 3;
+  max-width: calc(100% - 44px);
+  padding: 9px 14px;
+  border: 1px solid rgba(255, 255, 255, 0.38);
+  border-radius: 999px;
+  color: white;
+  background: rgba(12, 23, 48, 0.64);
+  backdrop-filter: blur(10px);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+}
+
+@media (max-width: 900px) {
+  .hero-photo-wrap {
+    width: min(100%, 520px);
+    justify-self: start;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero {
+    gap: 42px;
+  }
+  .hero-photo-frame {
+    border-radius: 24px;
+  }
+  .hero-photo-frame::before {
+    inset: 10px;
+    border-radius: 17px;
+  }
+  .hero-photo-wrap figcaption {
+    right: 14px;
+    bottom: 14px;
+    max-width: calc(100% - 28px);
+    font-size: 0.7rem;
+  }
 }
