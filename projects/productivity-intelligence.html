@@ -3,168 +3,140 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Case study: Building a productivity intelligence framework across operational teams." />
-  <title>Productivity Intelligence Framework | Taylor Sain</title>
+  <meta name="description" content="Taylor Sain case study: an enterprise productivity measurement framework and Tableau dashboard for executive reporting." />
+  <title>Enterprise Productivity Intelligence | Taylor Sain</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="../style.css" />
+  <link rel="stylesheet" href="case-study.css" />
 </head>
 <body>
-  <header class="site-header">
+  <header class="case-header">
     <a class="brand" href="../index.html" aria-label="Taylor Sain home">TS</a>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
-    <nav class="site-nav" aria-label="Case study navigation">
-      <a href="#problem">Problem</a><a href="#framework">Framework</a><a href="#architecture">Architecture</a><a href="#impact">Impact</a>
-    </nav>
+    <a class="back-link" href="../index.html#projects">← Back to Case Studies</a>
   </header>
 
   <main>
-    <section class="case-hero section-shell reveal">
-      <a class="back-link" href="../index.html#projects">← Back to case studies</a>
-      <p class="eyebrow">FEATURED CASE STUDY</p>
-      <h1>Building a Productivity Intelligence Framework</h1>
-      <p class="case-lead">Measuring productivity across teams that all define success differently.</p>
-      <p class="case-intro">I partnered with executive leadership to develop a standardized analytics framework that transformed diverse operational metrics into one executive-ready productivity index.</p>
-      <div class="case-meta">
-        <article><span>Role</span><strong>Business Intelligence Analyst</strong></article>
-        <article><span>Focus</span><strong>Performance Measurement</strong></article>
-        <article><span>Tools</span><strong>Tableau · Smartsheet</strong></article>
-        <article><span>Approach</span><strong>Stakeholder-Led Design</strong></article>
+    <section class="case-hero section-shell">
+      <p class="eyebrow">FEATURED CASE STUDY · TABLEAU · KPI STRATEGY</p>
+      <h1>Enterprise Productivity Intelligence</h1>
+      <p class="case-lead">
+        I designed a department-wide productivity measurement framework and Tableau reporting experience that translates different forms of team value into a consistent, leadership-ready view of performance.
+      </p>
+      <aside class="portfolio-note" aria-label="Portfolio confidentiality note">
+        <strong>Portfolio note:</strong> This case study showcases a productivity analytics framework I designed and developed. To protect proprietary business information, all organization names, team names, metrics, and values displayed have been anonymized or replaced with representative sample data. The dashboard architecture, scoring methodology, analytical approach, and overall user experience accurately reflect the production solution.
+      </aside>
+      <div class="case-tags" aria-label="Project skills">
+        <span>Tableau</span><span>KPI Development</span><span>Data Modeling</span><span>Executive Reporting</span><span>Stakeholder Consulting</span>
       </div>
-      <div class="privacy-note"><strong>Portfolio note:</strong> Company names, team names, screenshots, metric values, and internal system details have been removed or generalized. The methodology and decision process remain true to the work.</div>
     </section>
 
-    <section id="problem" class="case-section section-shell reveal">
-      <div class="case-section-label">01 · THE BUSINESS PROBLEM</div>
-      <div class="case-two-column">
-        <div><h2>A simple question with no simple answer.</h2></div>
-        <div class="case-body">
-          <p>Leadership wanted to answer a deceptively simple question:</p>
-          <blockquote>Are we becoming more productive?</blockquote>
-          <p>The challenge was that every operational team defined productivity differently. Some measured throughput. Others tracked cost savings, automation adoption, compliance, quality improvements, or risk reduction.</p>
-          <p>Without a common measurement framework, comparing performance across teams—or evaluating organization-wide progress—was nearly impossible. The goal was not to replace team-specific metrics, but to preserve their meaning while creating a reliable enterprise-level view.</p>
+    <section class="case-summary section-shell">
+      <article>
+        <span>01</span>
+        <h2>The challenge</h2>
+        <p>Every team created value differently. Leadership needed a fair way to compare productivity without reducing it to speed alone or forcing unrelated work into the same metric.</p>
+      </article>
+      <article>
+        <span>02</span>
+        <h2>My role</h2>
+        <p>I led metric definition, stakeholder requirements, scoring logic, data preparation, dashboard development, testing, documentation, and the design of the executive and team-level reporting experience.</p>
+      </article>
+      <article>
+        <span>03</span>
+        <h2>The solution</h2>
+        <p>I created a weighted productivity index across four pillars—Efficiency, Financial Impact, Quality &amp; Risk Mitigation, and Scalability—with drill-down views for team and metric-level analysis.</p>
+      </article>
+    </section>
+
+    <section class="dashboard-showcase section-shell">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">EXECUTIVE EXPERIENCE</p>
+          <h2>One view of performance, with the drivers made visible.</h2>
+        </div>
+        <p>The executive dashboard combines a weighted productivity score with pillar-level movement and ranked contributors, helping leaders see both the headline and the underlying story.</p>
+      </div>
+      <figure class="dashboard-frame">
+        <img src="../assets/images/executive-productivity-overview.png" alt="Sanitized Executive Productivity Overview Tableau dashboard showing productivity score, performance pillars, and top and bottom contributors" />
+        <figcaption>Sanitized portfolio version using fictional team names, metric names, and values.</figcaption>
+      </figure>
+    </section>
+
+    <section class="feature-grid section-shell">
+      <article>
+        <p class="eyebrow">PRODUCTIVITY SCORE</p>
+        <h3>A weighted index instead of a single raw metric</h3>
+        <p>The score normalizes quarterly change, accounts for whether increases or decreases represent improvement, and applies leadership-defined weights across the productivity pillars.</p>
+      </article>
+      <article>
+        <p class="eyebrow">CONTRIBUTOR ANALYSIS</p>
+        <h3>Prioritized insight, not just reporting</h3>
+        <p>Top and bottom contributor views surface the metrics creating the largest positive or negative movement, helping leadership focus follow-up conversations.</p>
+      </article>
+      <article>
+        <p class="eyebrow">BUSINESS LANGUAGE</p>
+        <h3>Context built directly into the dashboard</h3>
+        <p>Plain-language statements explain score movement against the baseline so non-technical users can interpret the result without reverse-engineering the calculation.</p>
+      </article>
+      <article>
+        <p class="eyebrow">QUARTERLY REPORTING</p>
+        <h3>A repeatable model that can scale</h3>
+        <p>The framework supports structured quarterly metric intake, consistent classifications, baseline comparisons, and a reusable reporting process across teams.</p>
+      </article>
+    </section>
+
+    <section class="dashboard-showcase section-shell team-view">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">TEAM DRILL-DOWN</p>
+          <h2>From the department score to the metrics behind one team.</h2>
+        </div>
+        <p>The team dashboard keeps the same scoring language while revealing metric-level trends, values, and direction-adjusted change for deeper analysis.</p>
+      </div>
+      <figure class="dashboard-frame">
+        <img src="../assets/images/team-alpha-performance-dashboard.png" alt="Sanitized Team Alpha Performance Tableau dashboard showing team productivity score, pillar results, and metric trends" />
+        <figcaption>The team page demonstrates dashboard navigation and drill-down from executive summary to operational detail.</figcaption>
+      </figure>
+    </section>
+
+    <section class="process section-shell">
+      <div class="section-heading compact">
+        <div>
+          <p class="eyebrow">HOW I BUILT IT</p>
+          <h2>Business definition came before visualization.</h2>
         </div>
       </div>
+      <ol class="process-list">
+        <li><strong>Defined productivity.</strong><span>Facilitated alignment on what should count as productivity across distinct teams and work types.</span></li>
+        <li><strong>Created the measurement framework.</strong><span>Classified metrics into four pillars and established scoring direction, baselines, and weights.</span></li>
+        <li><strong>Engineered the calculation chain.</strong><span>Built reusable Tableau calculations for percent change, direction adjustment, pillar indexes, and team and department scores.</span></li>
+        <li><strong>Designed for decisions.</strong><span>Built executive scorecards, ranked contributors, narrative context, filters, navigation, and team-level detail views.</span></li>
+        <li><strong>Operationalized reporting.</strong><span>Documented metric intake, data definitions, validation needs, maintenance risks, and the quarterly reporting process.</span></li>
+      </ol>
     </section>
 
-    <section class="case-section case-section-tint reveal">
-      <div class="section-shell">
-        <div class="case-section-label">02 · MY ROLE</div>
-        <h2>From business discovery to analytics product.</h2>
-        <div class="role-grid">
-          <article><span>01</span><h3>Business Discovery</h3><p>Partnered with team leaders to understand workflows, business outcomes, data maturity, and the decisions each metric needed to support.</p></article>
-          <article><span>02</span><h3>Framework Design</h3><p>Created the metric classification model, baseline logic, scoring direction, weighting strategy, and productivity index methodology.</p></article>
-          <article><span>03</span><h3>Product Development</h3><p>Built a reusable Tableau experience with leadership-level scorecards, contributor analysis, team drilldowns, and validation guidance.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="framework" class="case-section section-shell reveal">
-      <div class="case-section-label">03 · RESEARCH & DISCOVERY</div>
-      <div class="case-two-column">
-        <div><h2>Before measuring productivity, I had to define value.</h2></div>
-        <div class="case-body"><p>Rather than asking teams only what they already tracked, I centered discovery on a more useful question: <strong>How does your team create value?</strong></p><p>Those conversations revealed that productivity could not be represented by one universal KPI. I therefore organized metrics into four standardized pillars that could accommodate different kinds of work while maintaining a common leadership narrative.</p></div>
-      </div>
-      <div class="pillar-grid">
-        <article><span>01</span><h3>Efficiency</h3><p>Speed, throughput, volume, and effort reduction.</p></article>
-        <article><span>02</span><h3>Financial Impact</h3><p>Cost savings, cost avoidance, revenue protection, and financial value.</p></article>
-        <article><span>03</span><h3>Scalability</h3><p>Automation, adoption, reuse, standardization, and organizational leverage.</p></article>
-        <article><span>04</span><h3>Quality & Risk</h3><p>Quality improvement, compliance, defect reduction, and operational risk mitigation.</p></article>
+    <section class="outcomes section-shell">
+      <p class="eyebrow">BUSINESS VALUE</p>
+      <h2>The dashboard created a shared language for productivity.</h2>
+      <div class="outcome-grid">
+        <article><strong>4</strong><span>productivity pillars balancing efficiency, financial impact, quality, and scalability</span></article>
+        <article><strong>2 levels</strong><span>of reporting: executive overview and team-level metric detail</span></article>
+        <article><strong>1 model</strong><span>for comparing different forms of operational value without treating every team the same</span></article>
       </div>
     </section>
 
-    <section class="case-section case-section-dark reveal">
-      <div class="section-shell">
-        <div class="case-section-label">04 · THE METHODOLOGY</div>
-        <h2>Turning different work into a consistent measurement story.</h2>
-        <div class="process-flow">
-          <article><span>01</span><strong>Stakeholder Interviews</strong></article><b>→</b>
-          <article><span>02</span><strong>Workflow Analysis</strong></article><b>→</b>
-          <article><span>03</span><strong>Metric Classification</strong></article><b>→</b>
-          <article><span>04</span><strong>Baseline Design</strong></article><b>→</b>
-          <article><span>05</span><strong>Direction Logic</strong></article><b>→</b>
-          <article><span>06</span><strong>Weighted Index</strong></article><b>→</b>
-          <article><span>07</span><strong>Executive Insights</strong></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="case-section section-shell reveal">
-      <div class="case-section-label">05 · THE HARDEST ANALYTICAL PROBLEM</div>
-      <div class="case-two-column">
-        <div><h2>Not every improvement moves upward.</h2></div>
-        <div class="case-body"><p>Revenue increasing is positive. Cycle time decreasing is also positive. The same is true for defects, rework, cost, and risk.</p><p>To make unlike metrics comparable, I designed direction-adjusted calculations. Each metric was assigned a scoring direction so that improvement was interpreted according to business meaning before results were normalized.</p></div>
-      </div>
-      <div class="direction-grid">
-        <article><strong>Throughput ↑</strong><span>Positive movement</span></article>
-        <article><strong>Automation ↑</strong><span>Positive movement</span></article>
-        <article><strong>Cycle Time ↓</strong><span>Positive movement</span></article>
-        <article><strong>Defects ↓</strong><span>Positive movement</span></article>
-      </div>
-    </section>
-
-    <section class="case-section case-section-tint reveal">
-      <div class="section-shell">
-        <div class="case-section-label">06 · CREATING THE PRODUCTIVITY SCORE</div>
-        <h2>A calculation chain designed for interpretability.</h2>
-        <div class="calculation-chain">
-          <article><span>1</span><h3>Dynamic Baseline</h3><p>Establish a defensible comparison point for each metric.</p></article>
-          <article><span>2</span><h3>Percent Change</h3><p>Normalize dollars, counts, hours, and percentages into movement.</p></article>
-          <article><span>3</span><h3>Direction Adjustment</h3><p>Interpret increases and decreases according to business meaning.</p></article>
-          <article><span>4</span><h3>Pillar Score</h3><p>Aggregate performance within each productivity dimension.</p></article>
-          <article><span>5</span><h3>Weighted Index</h3><p>Combine pillar signals into one leadership-facing score.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="architecture" class="case-section section-shell reveal">
-      <div class="case-section-label">07 · TECHNICAL ARCHITECTURE</div>
-      <h2>A reusable path from team input to leadership decisions.</h2>
-      <div class="architecture-flow">
-        <article><span>01</span><strong>Operational Teams</strong><small>Quarterly metric ownership</small></article><b>→</b>
-        <article><span>02</span><strong>Structured Intake</strong><small>Standard fields and definitions</small></article><b>→</b>
-        <article><span>03</span><strong>Validation Rules</strong><small>Units, baseline, direction, context</small></article><b>→</b>
-        <article><span>04</span><strong>Calculation Layer</strong><small>Normalization and weighting</small></article><b>→</b>
-        <article><span>05</span><strong>Tableau</strong><small>Scorecards and drilldowns</small></article><b>→</b>
-        <article><span>06</span><strong>Leadership Review</strong><small>Trend and contributor analysis</small></article>
-      </div>
-    </section>
-
-    <section class="case-section case-section-dark reveal">
-      <div class="section-shell">
-        <div class="case-section-label">08 · DASHBOARD STRATEGY</div>
-        <h2>Designed around the questions leaders ask next.</h2>
-        <div class="dashboard-grid">
-          <article><span>01</span><h3>Executive Overview</h3><p>A single productivity index and four pillar signals establish the headline.</p></article>
-          <article><span>02</span><h3>Contributor Analysis</h3><p>Top and bottom movements surface the areas that need explanation.</p></article>
-          <article><span>03</span><h3>Team Drilldowns</h3><p>Leaders can move from enterprise performance to the metrics driving each team.</p></article>
-          <article><span>04</span><h3>Interpretation Guidance</h3><p>Tooltips and business language make the score understandable beyond technical users.</p></article>
-        </div>
-      </div>
-    </section>
-
-    <section id="impact" class="case-section section-shell reveal">
-      <div class="case-section-label">09 · BUSINESS IMPACT</div>
-      <h2>More than a dashboard: a shared measurement capability.</h2>
-      <div class="impact-list">
-        <article><span>01</span><p>Created a standardized language for measuring productivity across diverse operational teams.</p></article>
-        <article><span>02</span><p>Enabled consistent quarterly reporting without erasing the context behind team-specific work.</p></article>
-        <article><span>03</span><p>Reduced manual interpretation through reusable calculations, validation rules, and structured inputs.</p></article>
-        <article><span>04</span><p>Improved executive visibility into overall performance, pillar movement, and the metrics driving change.</p></article>
-        <article><span>05</span><p>Established a foundation for evaluating AI-assisted workflows and future ROI.</p></article>
-      </div>
-    </section>
-
-    <section class="case-section case-section-tint reveal">
-      <div class="section-shell case-two-column">
-        <div><div class="case-section-label">10 · LESSON LEARNED</div><h2>The dashboard was the interface. The framework was the product.</h2></div>
-        <div class="case-body"><p>The most valuable insight from this project was that successful analytics begins with defining the business problem before defining the metrics.</p><p>An analyst's responsibility is not simply to visualize available data. It is to create a shared structure that makes different work understandable and comparable without stripping away its meaning.</p><a class="button button-primary" href="../index.html#projects">Return to Portfolio</a></div>
-      </div>
+    <section class="case-cta section-shell">
+      <p class="eyebrow">EXPLORE MORE</p>
+      <h2>See the rest of my business intelligence and analytics work.</h2>
+      <a class="button button-primary" href="../index.html#projects">Return to Case Studies →</a>
     </section>
   </main>
 
-  <footer><p>© <span id="year"></span> Taylor Sain. Built with intention, data, and curiosity.</p></footer>
-  <script src="../script.js"></script>
+  <footer>
+    <p>© <span id="year"></span> Taylor Sain · Business Intelligence &amp; Enterprise Analytics</p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>
