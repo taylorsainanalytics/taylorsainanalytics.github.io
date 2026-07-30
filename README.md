@@ -1,26 +1,15 @@
-# Taylor Sain Portfolio — V2
+# Taylor Sain Portfolio
 
-Updated personal analytics portfolio built with HTML, CSS, and JavaScript.
+A GitHub Pages portfolio featuring business intelligence work, selected case studies, and a web-based resume.
 
-## Included
+## Pages
 
-- Updated homepage positioning Taylor as an enterprise analytics and measurement-framework professional
-- New featured case study: `projects/productivity-intelligence.html`
-- Sanitized productivity case-study content with no company, team, employee, internal metric, or proprietary screenshot details
-- Updated responsive styling
-- Professional headshot stored at `assets/images/taylor-sain-headshot.jpg`
-- Original uploaded homepage, CSS, and JavaScript retained as `.original` files for comparison
-
-## Before publishing
-
-1. Add the resume PDF at `assets/Taylor-Sain-Resume.pdf`.
-2. Confirm the LinkedIn and email links in `index.html`.
-3. Review all impact numbers before making the repository public.
-4. Open `index.html` locally to preview the site.
-5. Upload the folder contents to the root of the GitHub Pages repository.
+- `index.html` — portfolio homepage
+- `resume.html` — web resume and experience page
+- `projects/` — case study pages as they are completed
+- `assets/images/` — profile and project images
+- `assets/documents/Taylor-Sain-Resume.pdf` — downloadable PDF resume
 
 ## GitHub Pages
 
-- Source: Deploy from a branch
-- Branch: `main`
-- Folder: `/ (root)`
+Publish from the `main` branch and `/ (root)` folder. Keep `index.html`, `resume.html`, `style.css`, and `script.js` at the repository root.
