@@ -24,3 +24,15 @@ Personal business intelligence and enterprise analytics portfolio built with HTM
 - `assets/documents/Taylor-Sain-Resume.pdf`
 
 Upload the contents of this folder to the root of the GitHub Pages repository.
+
+## Case studies
+
+- Productivity Intelligence Framework
+- AI-Ready Content Processing
+
+The document intelligence case study is intentionally sanitized. Organization names, program names, project IDs, employee contact details, internal URLs, paths, and proprietary filenames are not published.
+
+
+## Document automation evidence
+
+The Document Intelligence case study includes sanitized Power Automate screenshots and rewritten portfolio-safe Python/VBA excerpts. Organization names, local paths, source URLs, project IDs, product names, and production file details were removed or generalized before publication.

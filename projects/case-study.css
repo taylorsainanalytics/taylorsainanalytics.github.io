@@ -10,3 +10,30 @@
 .case-cta{padding:110px 0}.case-cta h2{max-width:900px}.case-cta .button{margin-top:14px}
 @media(max-width:900px){.case-summary,.outcome-grid{grid-template-columns:1fr}.feature-grid{grid-template-columns:1fr}.process-list li{grid-template-columns:1fr;gap:8px}.outcomes{padding:44px 28px}}
 @media(max-width:640px){.case-header{align-items:flex-start;gap:16px}.back-link{font-size:.9rem}.case-hero{padding-top:70px}.case-hero h1{font-size:3.4rem}.dashboard-frame{border-radius:14px}}
+
+
+/* Document intelligence case study */
+.automation-architecture{padding:20px 0 105px}.automation-flow{display:flex;align-items:stretch;gap:10px;overflow-x:auto;padding:14px 2px 18px}.automation-flow article{flex:1 0 165px;min-height:165px;padding:22px;border:1px solid var(--line);border-radius:20px;background:white;box-shadow:0 10px 28px rgba(12,23,48,.05)}.automation-flow article span{display:block;margin-bottom:28px;color:var(--accent);font-weight:800}.automation-flow article strong,.automation-flow article small{display:block}.automation-flow article small{margin-top:10px;color:#667085;line-height:1.5}.automation-flow b{align-self:center;color:var(--accent);font-size:1.35rem}.automation-features{padding-bottom:95px}.case-section-soft{padding:95px 0;background:linear-gradient(135deg,#fff8f2 0%,#f8f2e9 100%);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}.challenge-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}.challenge-grid article{padding:28px;border:1px solid rgba(12,23,48,.08);border-radius:22px;background:rgba(255,255,255,.7)}.challenge-grid span{display:block;margin-bottom:32px;color:var(--accent);font-weight:800}.challenge-grid p{color:#536071}.outcomes-light{color:var(--ink);background:linear-gradient(135deg,#fff8f2,#f7eee3);border:1px solid #eadfd3}.outcomes-light .outcome-grid article{border-color:rgba(12,23,48,.09);background:rgba(255,255,255,.72)}.outcomes-light .outcome-grid span{color:#536071}.lessons-section{margin-top:110px}.lesson-layout{display:grid;grid-template-columns:.95fr 1.05fr;gap:70px}.lesson-layout p{color:#536071;font-size:1.05rem}.lesson-layout p:first-child{margin-top:0}
+@media(max-width:1000px){.challenge-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:800px){.lesson-layout{grid-template-columns:1fr;gap:28px}}
+@media(max-width:640px){.challenge-grid{grid-template-columns:1fr}.automation-flow article{flex-basis:150px}.case-section-soft{padding:72px 0}}
+
+
+/* Document intelligence evidence */
+.behind-automation{padding:30px 0 110px}
+.automation-evidence-grid{display:grid;grid-template-columns:.72fr 1.28fr;gap:24px;align-items:start;margin-top:34px}
+.evidence-card{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:white;box-shadow:0 14px 38px rgba(12,23,48,.08)}
+.evidence-card img{display:block;width:100%;height:auto;background:#fff}
+.evidence-card-tall img{max-height:620px;object-fit:contain}
+.evidence-card figcaption{padding:16px 20px;border-top:1px solid var(--line);color:#526070;font-size:.88rem;line-height:1.55}
+.evidence-card figcaption strong{color:var(--ink)}
+.code-evidence-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:24px;margin-top:28px}
+.code-evidence-card{overflow:hidden;border:1px solid var(--line);border-radius:24px;background:white;box-shadow:0 14px 38px rgba(12,23,48,.07)}
+.code-evidence-heading{display:flex;justify-content:space-between;gap:22px;align-items:flex-start;padding:26px 28px 18px}
+.code-evidence-heading h3{margin:0;font-size:1.45rem}
+.code-evidence-heading>span{white-space:nowrap;padding:7px 10px;border-radius:999px;background:var(--cream);color:var(--muted);font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.code-evidence-card pre{margin:0;padding:24px 28px;overflow:auto;background:#101b33;color:#f8fafc;font-size:.83rem;line-height:1.65}
+.code-evidence-card code{font-family:"SFMono-Regular",Consolas,"Liberation Mono",monospace}
+.code-evidence-card>p{margin:0;padding:20px 28px 26px;color:#526070;font-size:.94rem}
+@media(max-width:900px){.automation-evidence-grid,.code-evidence-grid{grid-template-columns:1fr}.evidence-card-tall img{max-height:500px}}
+@media(max-width:640px){.code-evidence-heading{flex-direction:column}.code-evidence-card pre{padding:20px;font-size:.76rem}.code-evidence-card>p{padding:18px 20px 24px}}
