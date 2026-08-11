@@ -37,3 +37,23 @@
 .code-evidence-card>p{margin:0;padding:20px 28px 26px;color:#526070;font-size:.94rem}
 @media(max-width:900px){.automation-evidence-grid,.code-evidence-grid{grid-template-columns:1fr}.evidence-card-tall img{max-height:500px}}
 @media(max-width:640px){.code-evidence-heading{flex-direction:column}.code-evidence-card pre{padding:20px;font-size:.76rem}.code-evidence-card>p{padding:18px 20px 24px}}
+
+/* AI-ready content extraction evidence */
+.code-evidence-section .section-heading > p { color: rgba(255,255,255,.72); }
+.code-card { overflow: hidden; margin-top: 34px; border: 1px solid rgba(255,255,255,.16); border-radius: 22px; background: #081126; box-shadow: 0 22px 60px rgba(0,0,0,.22); }
+.code-card-head { display: flex; justify-content: space-between; gap: 20px; padding: 15px 20px; border-bottom: 1px solid rgba(255,255,255,.12); color: rgba(255,255,255,.72); font-size: .84rem; font-weight: 700; }
+.code-card-head a { color: #ffb3ad; }
+.code-card pre { overflow-x: auto; margin: 0; padding: 28px; color: #f8fafc; font: 500 .9rem/1.72 ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", monospace; tab-size: 2; }
+.code-card code { font: inherit; }
+.code-callouts { display: grid; grid-template-columns: repeat(3,1fr); gap: 16px; margin-top: 18px; }
+.code-callouts article { padding: 20px; border: 1px solid rgba(255,255,255,.14); border-radius: 17px; background: rgba(255,255,255,.06); }
+.code-callouts strong, .code-callouts span { display: block; }
+.code-callouts strong { margin-bottom: 7px; color: white; }
+.code-callouts span { color: rgba(255,255,255,.68); font-size: .9rem; }
+.data-table-wrap { overflow-x: auto; margin: 30px 0 18px; border: 1px solid var(--line); border-radius: 20px; background: white; box-shadow: 0 12px 34px rgba(12,23,48,.07); }
+.data-sample-table { width: 100%; min-width: 940px; border-collapse: collapse; font-size: .91rem; }
+.data-sample-table th { padding: 16px 18px; color: var(--ink); background: var(--cream); text-align: left; font-size: .78rem; letter-spacing: .05em; text-transform: uppercase; }
+.data-sample-table td { padding: 18px; border-top: 1px solid var(--line); vertical-align: top; color: #465365; }
+.data-sample-table td:nth-child(-n+4) { white-space: nowrap; color: var(--ink); font-weight: 650; }
+.data-evidence-section > .text-link { display: inline-block; margin-top: 4px; }
+@media (max-width: 800px) { .code-callouts { grid-template-columns: 1fr; } .code-card pre { padding: 20px; font-size: .82rem; } }

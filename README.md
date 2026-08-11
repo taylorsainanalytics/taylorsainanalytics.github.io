@@ -1,38 +1,26 @@
-# Taylor Sain Portfolio
+# Taylor Sain — Business Intelligence Portfolio
 
-Personal business intelligence and enterprise analytics portfolio built with HTML, CSS, and JavaScript.
+GitHub Pages portfolio showcasing business intelligence, analytics strategy, automation, and enterprise data work.
 
-## Included
+## Current case studies
 
-- Homepage with professional introduction, impact metrics, selected case studies, approach, and contact section
-- Redesigned `resume.html` experience page with career timeline, project cards, education, technical toolkit, and recognition
-- Full Productivity Intelligence case study with sanitized Tableau dashboard screenshots
-- Professional headshot
-- Downloadable PDF resume
+- `projects/productivity-intelligence.html` — Productivity Intelligence Framework
+- `projects/document-intelligence.html` — AI-Ready Content Extraction
 
-## Repository structure
+## Portfolio-safe supporting samples
 
-- `index.html`
-- `resume.html`
-- `style.css`
-- `script.js`
-- `projects/productivity-intelligence.html`
-- `projects/case-study.css`
-- `assets/images/taylor-sain-headshot.jpg`
-- `assets/images/executive-productivity-overview.png`
-- `assets/images/team-alpha-performance-dashboard.png`
-- `assets/documents/Taylor-Sain-Resume.pdf`
+- `assets/code/pdf-content-extraction-sample.py` — sanitized Python excerpt adapted from the production extraction logic
+- `assets/data/ai-content-output-sample.csv` — fictionalized sample preserving the structured output schema
 
-Upload the contents of this folder to the root of the GitHub Pages repository.
+## Publishing
 
-## Case studies
+GitHub Pages source:
 
-- Productivity Intelligence Framework
-- AI-Ready Content Processing
+- Branch: `main`
+- Folder: `/ (root)`
 
-The document intelligence case study is intentionally sanitized. Organization names, program names, project IDs, employee contact details, internal URLs, paths, and proprietary filenames are not published.
+Keep `index.html`, `resume.html`, `style.css`, and `script.js` at the repository root.
 
+## Confidentiality
 
-## Document automation evidence
-
-The Document Intelligence case study includes sanitized Power Automate screenshots and rewritten portfolio-safe Python/VBA excerpts. Organization names, local paths, source URLs, project IDs, product names, and production file details were removed or generalized before publication.
+Portfolio examples intentionally remove or generalize proprietary organization names, product names, internal identifiers, employee information, file paths, source filenames, production data, and internal content.
