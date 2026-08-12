@@ -1,0 +1,21 @@
+.case-header{display:flex;justify-content:space-between;align-items:center;padding:18px clamp(22px,5vw,72px);border-bottom:1px solid var(--line);background:rgba(255,253,248,.94);position:sticky;top:0;z-index:20;backdrop-filter:blur(12px)}
+.back-link{font-weight:700}
+.pc-hero{padding:90px 0 65px}.pc-hero h1{max-width:1050px;font-size:clamp(3.4rem,7vw,6.7rem)}
+.pc-lead{max-width:980px;font-size:clamp(1.35rem,2.6vw,2.2rem);line-height:1.3;color:#334155}
+.pc-hero-grid{display:grid;grid-template-columns:1.35fr .65fr;gap:36px;align-items:stretch;margin-top:38px}
+.pc-hero-grid>div:first-child{font-size:1.06rem;color:var(--muted)}
+.pc-impact-card{display:flex;flex-direction:column;justify-content:center;padding:32px;border-radius:24px;background:var(--ink);color:white}
+.pc-impact-card span{font-size:.75rem;font-weight:800;letter-spacing:.14em;color:#ffb3ad}.pc-impact-card strong{display:block;margin:14px 0 8px;font-size:clamp(1.7rem,3vw,2.8rem)}.pc-impact-card p{margin:0;color:rgba(255,255,255,.72)}
+.portfolio-note{max-width:1100px;margin:28px 0 0;padding:19px 22px;border-left:4px solid var(--accent);background:var(--cream);color:var(--muted)}
+.case-tags{display:flex;flex-wrap:wrap;gap:9px;margin-top:24px}.case-tags span{padding:8px 12px;border-radius:999px;background:var(--cream);font-size:.8rem;font-weight:700}
+.pc-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;padding:20px 0 105px}.pc-summary article{padding:28px;border:1px solid var(--line);border-radius:22px;background:white}.pc-summary article>span,.pc-story-grid>article>span{display:block;margin-bottom:30px;color:var(--accent);font-weight:800}.pc-summary h2{font-family:"DM Sans",sans-serif;font-size:1.45rem}.pc-summary p{color:var(--muted)}
+.pc-section{padding:100px 0}.pc-tint{background:var(--cream)}.pc-dark{background:var(--ink);color:white}.pc-dark h2{max-width:900px}
+.pc-section-heading{display:grid;grid-template-columns:1.15fr .85fr;gap:55px;align-items:end;margin-bottom:36px}.pc-section-heading>p{color:var(--muted)}.pc-section-heading h2{margin-bottom:0}
+.pc-visual{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:24px;background:white;box-shadow:var(--shadow)}.pc-visual img{display:block;width:100%;height:auto}.pc-visual figcaption{padding:14px 20px;border-top:1px solid var(--line);color:var(--muted);font-size:.84rem}
+.pc-story-grid,.pc-feature-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}.pc-story-grid article,.pc-feature-grid article{padding:28px;border-radius:22px;background:white;border:1px solid var(--line)}.pc-story-grid p,.pc-feature-grid p:not(.eyebrow){color:var(--muted)}
+.pc-architecture{display:flex;gap:10px;align-items:stretch;margin-top:38px;overflow-x:auto;padding-bottom:10px}.pc-architecture article{flex:1 0 145px;min-height:160px;padding:20px;border:1px solid rgba(255,255,255,.15);border-radius:18px;background:rgba(255,255,255,.07)}.pc-architecture article span{display:block;margin-bottom:28px;color:#ff8b78;font-weight:800}.pc-architecture strong,.pc-architecture small{display:block}.pc-architecture small{margin-top:9px;color:rgba(255,255,255,.66)}.pc-architecture>b{align-self:center;color:#ff8b78}
+.pc-dashboard{margin-bottom:30px}.pc-feature-grid{margin-top:30px}
+.pc-metrics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:35px}.pc-metrics article{padding:26px;border:1px solid var(--line);border-radius:20px;background:white}.pc-metrics strong,.pc-metrics span{display:block}.pc-metrics strong{margin-bottom:9px;font-size:1.45rem}.pc-metrics span{color:var(--muted)}
+.pc-lesson{display:grid;grid-template-columns:.9fr 1.1fr;gap:70px}.pc-lesson>div:last-child{color:var(--muted);font-size:1.06rem}.pc-lesson .button{margin-top:18px}
+@media(max-width:900px){.pc-hero-grid,.pc-section-heading,.pc-lesson{grid-template-columns:1fr}.pc-summary{grid-template-columns:1fr}.pc-metrics{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:640px){.pc-hero{padding-top:58px}.pc-hero h1{font-size:3.25rem}.pc-story-grid,.pc-feature-grid,.pc-metrics{grid-template-columns:1fr}.pc-section{padding:72px 0}.case-header{gap:14px}.back-link{font-size:.9rem}}
