@@ -1,26 +1,18 @@
-# Taylor Sain — Business Intelligence Portfolio
+# Experience Page Update
 
-GitHub Pages portfolio showcasing business intelligence, analytics strategy, automation, and enterprise data work.
+This update uses `Sain_DirectorDataAnalyst_Resume(2).docx` as the current resume source.
 
-## Current case studies
+Replace:
+- `resume.html`
 
-- `projects/productivity-intelligence.html` — Productivity Intelligence Framework
-- `projects/document-intelligence.html` — AI-Ready Content Extraction
+`index.html` is included unchanged from the restored version for convenience.
 
-## Portfolio-safe supporting samples
-
-- `assets/code/pdf-content-extraction-sample.py` — sanitized Python excerpt adapted from the production extraction logic
-- `assets/data/ai-content-output-sample.csv` — fictionalized sample preserving the structured output schema
-
-## Publishing
-
-GitHub Pages source:
-
-- Branch: `main`
-- Folder: `/ (root)`
-
-Keep `index.html`, `resume.html`, `style.css`, and `script.js` at the repository root.
-
-## Confidentiality
-
-Portfolio examples intentionally remove or generalize proprietary organization names, product names, internal identifiers, employee information, file paths, source filenames, production data, and internal content.
+Key resume updates reflected:
+- 9+ years combined analytics and K-12 experience
+- $497K+ documented savings
+- 73M+ enterprise metadata records
+- SQL/query optimization with 15% execution-time improvement
+- Mentoring 2 analytics interns
+- $275.4K VPAT savings
+- $222K AI-ready content-processing savings
+- stronger leadership, data quality/governance, continuous improvement, and data-literacy positioning
