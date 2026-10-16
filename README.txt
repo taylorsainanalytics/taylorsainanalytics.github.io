@@ -1,1 +1,1 @@
-Upload projects/espn-academy.html and assets/images/espn-enrollment-dashboard-sanitized.png to the same paths in your existing GitHub Pages repository. Do not replace other files. Note: The dashboard PNG is a reconstructed visual with anonymized school labels; other figures are retained from the supplied reference and are not independently synthetic.
+Upload index.html and home-compact.css to the ROOT of your GitHub Pages repository. Do not replace style.css or other files. This fixes spacing only on the three-section homepage. Keep the current resume.html and projects.html.

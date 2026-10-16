@@ -1,0 +1,78 @@
+/* Homepage-only layout. Does not affect the Project Library or Experience page. */
+body.compact-home .compact-hero,
+body.compact-home .compact-work,
+body.compact-home .compact-contact {box-sizing:border-box}
+body.compact-home .compact-hero {
+  min-height:0; padding-top:clamp(42px,5vw,72px);
+  padding-bottom:clamp(36px,4vw,56px);
+  border-bottom:1px solid var(--line);
+}
+body.compact-home .compact-intro .eyebrow {margin-bottom:12px}
+body.compact-home .compact-intro h1 {
+  max-width:680px; font-size:clamp(2.55rem,4.6vw,4.5rem);
+  line-height:1.08; margin:0 0 17px;
+}
+body.compact-home .compact-lead {
+  max-width:630px; margin:0 0 23px; color:var(--muted);
+  font-size:clamp(.98rem,1.35vw,1.12rem);line-height:1.65;
+}
+body.compact-home .hero-actions {gap:11px}
+body.compact-home .hero-actions .button {min-height:43px;padding:0 19px;font-size:.88rem}
+body.compact-home .compact-work {
+  padding-top:clamp(32px,4vw,52px);
+  padding-bottom:clamp(34px,4vw,55px);
+  border-bottom:1px solid var(--line);
+}
+body.compact-home .compact-work-layout,
+body.compact-home .compact-work-content {width:100%;min-width:0}
+body.compact-home .compact-work-heading {
+  display:grid;grid-template-columns:minmax(0,1fr) minmax(240px,.9fr);
+  align-items:end;gap:32px;margin-bottom:25px;
+}
+body.compact-home .compact-work-heading h2,
+body.compact-home .compact-contact h2 {
+  font-size:clamp(1.9rem,3vw,3rem);line-height:1.15;margin:0;
+}
+body.compact-home .compact-work-heading p:not(.eyebrow) {
+  margin:0;color:var(--muted);font-size:.98rem;line-height:1.65;
+}
+body.compact-home .compact-specialties {
+  display:flex;flex-wrap:wrap;gap:9px;margin:0 0 24px;
+}
+body.compact-home .compact-specialties span {
+  padding:8px 12px;border:1px solid var(--line);border-radius:999px;
+  font-size:.83rem;font-weight:600;background:white;
+}
+body.compact-home .compact-results {
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));
+  gap:18px;padding:19px 0;border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);margin-bottom:18px;
+}
+body.compact-home .compact-results div {display:flex;flex-direction:column;gap:3px}
+body.compact-home .compact-results strong {font-size:clamp(1.2rem,2vw,1.7rem);line-height:1.2}
+body.compact-home .compact-results span {color:var(--muted);font-size:.82rem}
+body.compact-home .compact-project-link {display:inline-block;font-weight:700;font-size:.91rem;color:var(--navy)}
+body.compact-home .compact-project-link:hover {color:var(--accent)}
+body.compact-home .compact-contact {
+  display:flex;align-items:center;justify-content:space-between;
+  gap:28px;padding-top:clamp(32px,4vw,48px);
+  padding-bottom:clamp(35px,4vw,55px);
+}
+body.compact-home .compact-contact p:not(.eyebrow) {
+  margin:12px 0 0;color:var(--muted);font-size:.96rem;
+}
+body.compact-home .compact-contact-actions {display:flex;gap:10px;flex-wrap:wrap}
+body.compact-home .compact-contact-actions .button {min-height:43px;padding:0 18px;font-size:.88rem}
+body.compact-home footer {padding:18px 20px;font-size:.83rem}
+@media(max-width:760px){
+  body.compact-home .compact-work-heading {grid-template-columns:1fr;gap:12px}
+  body.compact-home .compact-contact {align-items:flex-start;flex-direction:column;gap:20px}
+}
+@media(max-width:520px){
+  body.compact-home .compact-hero {padding-top:35px;padding-bottom:32px}
+  body.compact-home .compact-intro h1 {font-size:clamp(2.1rem,9vw,3rem)}
+  body.compact-home .compact-results {grid-template-columns:1fr 1fr;gap:16px}
+  body.compact-home .compact-results div:last-child {grid-column:1/-1}
+  body.compact-home .compact-work {padding-top:30px;padding-bottom:33px}
+  body.compact-home .compact-contact {padding-top:30px;padding-bottom:36px}
+}
