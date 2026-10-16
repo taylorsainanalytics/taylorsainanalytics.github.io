@@ -1,0 +1,1 @@
+Upload projects/espn-academy.html and assets/images/espn-enrollment-dashboard-sanitized.png to the same paths in your existing GitHub Pages repository. Do not replace other files. Note: The dashboard PNG is a reconstructed visual with anonymized school labels; other figures are retained from the supplied reference and are not independently synthetic.

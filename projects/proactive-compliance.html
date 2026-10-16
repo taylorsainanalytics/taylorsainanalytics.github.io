@@ -12,9 +12,15 @@
   <link rel="stylesheet" href="proactive-compliance.css" />
 </head>
 <body>
-  <header class="case-header">
+  <header class="site-header">
     <a class="brand" href="../index.html" aria-label="Taylor Sain home">TS</a>
-    <a class="back-link" href="../index.html#projects">← Back to Case Studies</a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html#about">About</a>
+      <a href="../resume.html">Experience</a>
+      <a href="../projects.html" class="nav-active" aria-current="page">Projects</a>
+      <a href="../index.html#contact">Contact Me</a>
+    </nav>
   </header>
 
   <main>
@@ -148,13 +154,13 @@
         <div>
           <p>The biggest improvement came from understanding why the report existed and challenging the assumptions behind it. Faster reporting mattered, but the more valuable outcome was a model that better reflected the decisions stakeholders actually needed to make.</p>
           <p>This project reinforced my approach to business intelligence: <strong>understand the process, validate the logic, then build the interface.</strong></p>
-          <a class="button button-primary" href="../index.html#projects">Return to Portfolio</a>
+          <a class="button button-primary" href="../projects.html">Return to Portfolio</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer><p>© <span id="year"></span> Taylor Sain · Business Intelligence &amp; Enterprise Analytics</p></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+  
+<script src="../script.js"></script></body>
 </html>

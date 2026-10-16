@@ -12,9 +12,15 @@
   <link rel="stylesheet" href="case-study.css" />
 </head>
 <body>
-  <header class="case-header">
+  <header class="site-header">
     <a class="brand" href="../index.html" aria-label="Taylor Sain home">TS</a>
-    <a class="back-link" href="../index.html#projects">← Back to Case Studies</a>
+    <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="site-nav" aria-label="Primary navigation">
+      <a href="../index.html#about">About</a>
+      <a href="../resume.html">Experience</a>
+      <a href="../projects.html" class="nav-active" aria-current="page">Projects</a>
+      <a href="../index.html#contact">Contact Me</a>
+    </nav>
   </header>
 
   <main>
@@ -204,13 +210,13 @@ def extract_objectives(page):
         <div class="case-body">
           <p>The most important part of this project was not the AI itself. It was creating reliable inputs.</p>
           <p>Automating document extraction required understanding the source layout, defining what “correct” meant, encoding exceptions, structuring metadata, and validating the result. That data-preparation layer is what made the downstream AI workflow practical at scale.</p>
-          <a class="button button-primary" href="../index.html#projects">Return to Portfolio</a>
+          <a class="button button-primary" href="../projects.html">Return to Portfolio</a>
         </div>
       </div>
     </section>
   </main>
 
   <footer><p>© <span id="year"></span> Taylor Sain · Business Intelligence &amp; Enterprise Analytics</p></footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
-</body>
+  
+<script src="../script.js"></script></body>
 </html>
